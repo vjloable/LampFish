@@ -1,0 +1,31 @@
+name: lampfish
+description: A Mobile Application with Image-to-Timetable Interpreter using Optical Character Recognition
+publish_to: 'none'
+version: 1.0.0+1
+
+environment:
+  sdk: '>=3.0.1 <4.0.0'
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+  cupertino_icons: ^1.0.2
+  swipeable_card_stack: ^0.0.5
+  google_mlkit_text_recognition: ^0.8.1
+  camera: ^0.10.5+2
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^2.0.0
+
+flutter:
+  uses-material-design: true
+#  assets:
+#    - lib/assets/logo/google_logo.png
+#
+#  fonts:
+#    - family: Menlo
+#      fonts:
+#        - asset: lib/assets/fonts/Menlo-Regular.ttf
