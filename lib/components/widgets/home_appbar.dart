@@ -8,10 +8,10 @@ class HomeAppBar {
     return PreferredSize(
       preferredSize: const Size.fromHeight(60),
       child: AppBar(
-        scrolledUnderElevation: 1,
+        scrolledUnderElevation: 10,
         automaticallyImplyLeading: false,
         titleSpacing: 0,
-        backgroundColor: background ?? PaletteOne.primaryColor,
+        backgroundColor: background ?? Colors.transparent,
         title: child,
       ),
     );

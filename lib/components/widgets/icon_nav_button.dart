@@ -10,6 +10,7 @@ class IconNavButton extends StatelessWidget {
   final double? iconSize;
   final Color? iconColor;
   final double? fontSize;
+  final bool isSelected;
   final void Function()? onPressed;
   const IconNavButton({
     Key? key,
@@ -21,6 +22,7 @@ class IconNavButton extends StatelessWidget {
     this.onPressed,
     this.height = 70,
     this.width = 70,
+    this.isSelected = false,
   }) : super(key: key);
 
   @override
@@ -29,15 +31,15 @@ class IconNavButton extends StatelessWidget {
       onTap: onPressed,
       enableFeedback: true,
       splashColor: PaletteOne.primaryColor.withOpacity(0.1),
-      borderRadius: BorderRadius.circular(10),
+      borderRadius: BorderRadius.circular(50),
       child: Ink(
-        width: 60,
-        height: 60,
+        width: 50,
+        height: 50,
         color: Colors.transparent,
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
-            Icon(icon, size: 30, color: PaletteOne.primaryColor),
+            Icon(icon, size: 30, color: iconColor),
             // SizedBox(child: Text(text?.data as String, style: TextStyle(color: PaletteOne.primaryColor, fontWeight: FontWeight.bold, fontSize: 12)))
           ],
         ),
